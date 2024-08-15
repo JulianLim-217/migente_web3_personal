@@ -1,0 +1,185 @@
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(99.2deg, #F3BD72 30.4%, #8B4C54 54.24%);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    padding: 0px max(10vw, 20px);
+    z-index: 20;
+
+    @media screen and (max-width: $mobile) {
+        display: flex;
+    }
+
+    .empty {
+        display: block;
+
+        @media screen and (max-width: $mobile) {
+            display: none;
+        }
+    }
+
+    .intro {
+        z-index: 2;
+
+        .heading {
+            font-family: 'JI Chimichanga';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 156px;
+            line-height: 145px;
+            /* identical to box height */
+
+
+            color: #FFFFFF;
+
+            margin-bottom: 32px;
+
+            @media screen and (min-width: $mobile) and (max-width: $tablet) {
+                font-size: 92px;
+                line-height: 86px;
+                margin-bottom: 20px;
+            }
+
+            @media screen and (max-width: $mobile) {
+                font-size: 48px;
+                line-height: 45px;
+                margin-bottom: 8px;
+            }
+        }
+
+        .sub-heading {
+            display: flex;
+            height: max-content;
+            align-items: center;
+
+            .vertical-bar {
+                width: 12px;
+                border-radius: 10px;
+                height: 80% !important;
+                max-height: 200px;
+                min-height: 100px;
+                background-color: #FFFFFF;
+                box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+                margin-right: 28px;
+                margin-bottom: 19px;
+
+                @media screen and (max-width: $mobile) {
+                    display: none;
+                }
+            }
+
+            .content {
+                font-family: 'Neue Haas Grotesk Display Pro';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 150%;
+                /* or 36px */
+
+
+                color: #FFFFFF;
+
+                margin-bottom: 26px;
+
+                @media screen and (min-width: $mobile) and (max-width: $tablet) {
+                    font-size: 18px;
+                    margin-bottom: 48px;
+                }
+
+                @media screen and (max-width: $mobile) {
+                    font-size: 16px;
+                    margin-bottom: 24px;
+                }
+            }
+        }
+
+        .action-btns {
+            margin-bottom: 48px;
+            display: grid;
+            grid-template-columns: 140px 175px;
+            column-gap: 25px;
+
+            @media screen and (max-width: $mobile) {
+                grid-template-columns: 114px 132px;
+                column-gap: 24px;
+            }
+        }
+    }
+
+    .background {
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        .mobile-backdrop {
+            @media screen and (max-width: $mobile) {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                z-index: 3;
+                background: rgba(0, 0, 0, 0.35);
+            }
+        }
+
+        .actor-1 {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 90vh;
+            z-index: 2;
+
+            @media screen and (min-width: $mobile) and (max-width: $tablet) {
+                left: -34%;
+                height: 96vh;
+            }
+
+            @media screen and (max-width: $mobile) {
+                left: -76%;
+            }
+        }
+
+        .actor-2 {
+            position: absolute;
+            left: 18.5%;
+            top: 0vh;
+            height: 51vh;
+            z-index: 1;
+
+            @media screen and (min-width: $mobile) and (max-width: $tablet) {
+                left: -10.5%;
+                height: 52vh;
+            }
+
+            @media screen and (max-width: $mobile) {
+                left: unset;
+                right: -70%;
+            }
+        }
+
+        .actor-3 {
+            position: absolute;
+            left: 18.5%;
+            bottom: 0vh;
+            height: 51vh;
+            z-index: 1;
+
+            @media screen and (min-width: $mobile) and (max-width: $tablet) {
+                left: 0;
+                bottom: 15vh;
+                height: 36vh;
+            }
+
+            @media screen and (max-width: $mobile) {}
+        }
+    }
+
+}

@@ -1,0 +1,296 @@
+.project-section {
+    min-height: 100vh;
+    padding: 0px max(10vw, 20px);
+    background-image: url('../../public/image/Project_image/project_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    // z-index: 20;
+    position: relative;
+    // clip-path: circle(50% at 50% 50%);
+
+
+    .spot-light {
+
+
+        @media (min-width: 1440px) {
+            position: absolute;
+            right: 250px;
+            bottom: 100px;
+            width: 440px;
+            height: 440px;
+            box-shadow: 0 0 0 99999px rgba(0, 0, 0, .9);
+            border-radius: 50%;
+        }
+
+        @media (max-width: 1440px) {
+            position: absolute;
+            right: 130px;
+            bottom: 80px;
+            width: 420px;
+            height: 420px;
+            box-shadow: 0 0 0 99999px rgba(0, 0, 0, .9);
+            border-radius: 50%;
+        }
+
+        @media (max-width: 1024px) {
+            position: absolute;
+            right: 30px;
+            bottom: 80px;
+            width: 380px;
+            height: 380px;
+            box-shadow: 0 0 0 99999px rgba(0, 0, 0, .8);
+            border-radius: 50%;
+        }
+
+        @media (max-width: 768px) {
+            position: absolute;
+            right: -30px;
+            bottom: 130px;
+            width: 300px;
+            height: 300px;
+            box-shadow: 0 0 0 99999px rgba(0, 0, 0, .8);
+            border-radius: 50%;
+        }
+
+        @media (max-width: 568px) {
+            position: absolute;
+            right: 100px;
+            bottom: 250px;
+            width: 160px;
+            height: 160px;
+            box-shadow: 0 0 0 99999px rgba(0, 0, 0, .7);
+
+            border-radius: 50%;
+        }
+
+        @media (max-width: 425px) {
+            position: absolute;
+            right: 130px;
+            bottom: 280px;
+            width: 160px;
+            height: 160px;
+            box-shadow: 0 0 0 99999px rgba(0, 0, 0, .7);
+
+        }
+
+        @media (max-width: 414px) {
+            position: absolute;
+            right: 130px;
+            bottom: 230px;
+            width: 160px;
+            height: 160px;
+            box-shadow: 0 0 0 99999px rgba(0, 0, 0, .7);
+
+        }
+
+        @media (max-width: 393px) {
+            position: absolute;
+            right: 110px;
+            bottom: 230px;
+            width: 150px;
+            height: 150px;
+            box-shadow: 0 0 0 99999px rgba(0, 0, 0, .7);
+
+        }
+
+    }
+
+
+
+    @media (max-width:768px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media (max-width:$mobile) {
+        background-image: url('../../public/image/Project_image/mobile_project_bg.png');
+        // position: relative;
+
+
+    }
+
+
+
+
+    .project-section-inner {
+        position: relative;
+        z-index: 10;
+
+        @media (max-width:$mobile) {
+            padding-bottom: 200px;
+        }
+
+
+        .project-inner-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+
+            .left-text-div {
+                width: 53%;
+
+                @media (max-width:768px) {
+                    width: 100%;
+                }
+
+                .heading-wrapper {
+                    position: relative;
+                    padding-top: 24px;
+                    padding-bottom: 24px;
+
+
+                    .title {
+                        font-family: 'Neue Haas Grotesk Display Pro';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 96px;
+                        line-height: 115px;
+                        letter-spacing: -0.02em;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+
+                        @media (max-width:$tablet) {
+                            font-weight: 900;
+                            font-size: 92px;
+                            line-height: 110px;
+                            letter-spacing: -0.02em;
+                        }
+
+                        @media (max-width:$mobile) {
+                            font-weight: 700;
+                            font-size: 48px;
+                            line-height: 58px;
+                        }
+
+                        span {
+                            font-family: 'JI Chimichanga';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 96px;
+                            line-height: 89px;
+                            letter-spacing: -0.02em;
+                            text-transform: capitalize;
+                            color: #BDB76B;
+
+                            @media (max-width:$tablet) {
+                                font-weight: 400;
+                                font-size: 92px;
+                                line-height: 86px;
+                                letter-spacing: -0.02em;
+                            }
+
+                            @media (max-width:$mobile) {
+                                font-weight: 700;
+                                font-size: 48px;
+                                line-height: 58px;
+                                padding-left: 10px;
+                            }
+
+                        }
+
+                        .vertical-line {
+                            position: relative;
+                            border: 1px solid rgba(255, 255, 255, 0.35);
+                            transform: rotate(-90deg);
+                            z-index: 500;
+                            top: -38px;
+                            width: 378px;
+                            /* right: -63px; */
+                            left: 319px;
+                        }
+                    }
+
+
+                }
+
+
+                .para-wrapper {
+                    display: flex;
+                    height: max-content;
+                    align-items: center;
+
+                    .content {
+                        font-family: 'Neue Haas Grotesk Display Pro';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 24px;
+                        line-height: 150%;
+                        color: #FFFFFF;
+                        margin-top: 32px;
+                        max-width: 616px;
+                        position: relative;
+
+
+                        @media (max-width:$tablet) {
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 150%;
+                            margin-top: 35px;
+                        }
+
+                        @media (max-width:$mobile) {
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 150%;
+                            margin-top: 9px;
+
+                        }
+                    }
+
+
+                    .vertical-line {
+                        width: 4px;
+                        border-radius: 10px;
+                        height: 90%;
+                        max-height: 200px;
+                        min-height: 100px;
+                        background-color: #FFFFFF;
+                        box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+                        margin-right: 28px;
+                        margin-bottom: -35px;
+
+                        @media (max-width:$mobile) {
+                            display: none;
+                        }
+                    }
+                }
+
+                .scroll-to-see-more {
+                    margin-top: 100px;
+
+                    @media (max-width:768px) {
+                        margin-top: 80px;
+                    }
+
+                    @media (max-width:$mobile) {
+                        margin-top: 60px;
+                        position: relative;
+                        bottom: -100px;
+                    }
+                }
+            }
+
+            .right-image-div {
+                position: relative;
+                z-index: 30;
+
+                // .transparent-lense {
+
+                //     position: absolute;
+                //     top: 0;
+                //     left: 0;
+                //     right: 0;
+                //     bottom: 0;
+                //     clip-path: circle(50% at 50% 50%);
+                //     z-index: 2000;
+
+                // }
+
+            }
+
+
+        }
+    }
+}

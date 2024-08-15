@@ -1,0 +1,154 @@
+.the-mint-section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 100vh;
+  background-color: #f3bd72;
+  z-index: 20;
+  padding: 84px 0;
+  overflow-y: hidden;
+  overflow-x: hidden;
+
+
+  .section-title {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 3.7vw;
+
+    @media screen and (max-width: 786px) {
+      padding-left: 2rem;
+      padding-right: 0 !important;
+    }
+
+    h1 {
+      font-family: "JI Chimichanga";
+      font-style: normal;
+      font-weight: 400;
+      font-size: clamp(54px, 6.6vw, 96px);
+      line-height: 89px;
+      letter-spacing: -0.02em;
+      text-transform: capitalize;
+      color: #292d32;
+      min-width: fit-content;
+    }
+
+    .border-left {
+      width: 80%;
+      height: 2px;
+      background: rgba(41, 45, 50, 0.2);
+      margin-left: 42px;
+
+      @media screen and (max-width: 786px) {
+        width: 80%;
+        margin-left: 1rem;
+      }
+    }
+
+  }
+
+  .main {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    column-gap: 8rem;
+    margin: auto 0;
+    padding: 0 3.7vw;
+
+    @media screen and (max-width: 1440px) {
+      column-gap: 2rem;
+    }
+    @media screen and (max-width: 786px) {
+        flex-direction: column;
+        padding: 0 2rem;
+        row-gap: 3rem;
+        margin-top: 2rem;
+    }
+
+    .mint-info {
+      display: flex;
+      flex-direction: column;
+      row-gap: 4rem;
+
+      @media screen and (max-width: 786px) {
+        row-gap: 2rem;
+      }
+
+      main {
+        display: flex;
+        flex-direction: column;
+        row-gap: 4rem;
+        width: 100%;
+        max-width: 500px;
+        padding: 3rem;
+        border: 2px solid #292d32;
+        height: 100%;
+
+        @media screen and (max-width: 786px) {
+          padding: 3rem 1rem;
+          row-gap: 2rem;
+          max-width: 100%;
+        }
+
+
+        div {
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 36px;
+
+            @media screen and (max-width: 786px) {
+              width: 24px;
+            }
+          }
+
+          p {
+            font-style: normal;
+            font-weight: 500;
+            font-family: "Neue Haas Grotesk Display Pro";
+            font-style: normal;
+            font-weight: 800;
+            font-size: clamp(22px, 1.6vw, 24px);
+            line-height: 150%;
+            color: #292D32;
+            margin-left: 2rem;
+
+            @media screen and (max-width: 786px) {
+              margin-left: 1rem;
+              font-size: 18px;
+            }
+          }
+
+
+        }
+      }
+
+      footer {
+
+        h4 {
+          font-family: "Neue Haas Grotesk Display Pro";
+          font-style: normal;
+          font-weight: 900;
+          font-size: 24px;
+          line-height: 150%;
+          color: #292d32;
+
+        }
+        p {
+          margin-top: 1rem;
+          font-family: "Neue Haas Grotesk Display Pro";
+          font-style: normal;
+          font-weight: 800;
+          font-size: 24px;
+          line-height: 150%;
+          color: #292d32dd;
+
+          @media screen and (max-width: 786px) {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

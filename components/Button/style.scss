@@ -1,0 +1,74 @@
+.custom-button {
+    position: relative;
+    cursor: pointer;
+
+    &:hover {
+        .main-button {
+            margin-right: 0px !important;
+            margin-left: 0px !important;
+
+            margin-top: 0px !important;
+            margin-bottom: 0px !important;
+            transition: 0.05s ease-in;
+        }
+    }
+
+    .main-button {
+        position: relative;
+        z-index: 2;
+        padding: 17px 40px;
+
+        margin-right: -8px;
+        margin-left: 8px;
+        margin-top: -8px;
+        margin-bottom: 8px;
+
+        &.fill {
+            background-color: #F96464;
+            border: 1px solid #F96464;
+        }
+
+        &.outline {
+            background-color: #784449;
+            border: 1px solid #FFFFFF;
+        }
+
+        &.bw {
+            background-color: #ffffff;
+            border: 1px solid #FFFFFF;
+
+            .title {
+                color: #292D32;
+            }
+        }
+
+        .title {
+            font-family: 'JI Chimichanga';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 32px;
+            line-height: 30px;
+            /* identical to box height */
+
+
+            color: #FFFFFF;
+
+            @media screen and (max-width: $mobile) {
+                font-size: 16px;
+                line-height: 15px;
+            }
+        }
+    }
+
+    .outline-distorted {
+        width: 100%;
+        height: 100%;
+
+        border: 1px solid #FFFFFF;
+
+        position: absolute;
+        z-index: 1;
+        left: 0px;
+        top: 0px
+    }
+}

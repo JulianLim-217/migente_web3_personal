@@ -1,0 +1,308 @@
+.nft-section {
+    // height: 100vh;
+    // padding: 0px max(10vw, 20px);
+    // background-image: url('../../public/image/nft/nft-bg.png');
+
+    z-index: 20;
+    position: relative;
+    background-color: #f3bd72;
+    padding-left: 30px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+    @media (min-width:868px) {
+        height: 100vh;
+    }
+
+    @media (max-width:768px) {
+        padding-left: 10px;
+        max-height: 100%;
+        padding-bottom: 84px;
+    }
+
+    .nft-section-inner {
+        .gird-container {
+            display: grid;
+            grid-template-columns: 400px 2fr 1fr;
+            gap: 10px;
+
+            @media (max-width:$tablet) {
+                grid-template-columns: 255px 1.5fr 1fr;
+            }
+
+            @media (max-width:768px) {
+                grid-template-columns: 150px 1.5fr 1fr;
+            }
+
+            @media (max-width:$mobile) {
+                // grid-template-columns: 1fr;
+                // place-content: center;
+                // place-items: center;
+                // justify-items: center;
+                // justify-content: center;
+
+                // height: 100vh;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .first-item {
+                margin-top: -50px;
+                border-right: 2px solid rgba(41, 45, 50, 0.2);
+                padding-right: 416px;
+                padding-left: 30px;
+                border-left: 2px solid rgba(41, 45, 50, 0.2);
+
+
+                @media (max-width:$tablet) {
+                    padding-left: 17px;
+                    padding-right: 200px;
+                }
+
+                @media (max-width:768px) {
+                    border: none;
+                }
+
+                @media (max-width:$mobile) {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    order: 2;
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    border-top: 2px solid rgba(41, 45, 50, 0.2);
+                    border-bottom: 2px solid rgba(41, 45, 50, 0.2);
+
+                }
+
+                .img-wrapper {
+                    border: 1px solid #292D32;
+                    padding: 10px;
+                    min-width: 385px;
+                    margin-bottom: 16px;
+
+                    @media (max-width:$tablet) {
+                        min-width: 220px;
+                    }
+
+                    @media (max-width:768px) {
+                        max-width: 138px;
+                        min-width: 149px;
+
+                    }
+
+                    @media (max-width:$mobile) {
+                        min-width: 120px;
+                        min-width: 117px;
+                        /* max-width: 21px; */
+                        margin: 3px;
+                    }
+
+
+                    img {
+                        max-width: 365px;
+
+                        @media (max-width:$tablet) {
+                            max-width: 200px;
+
+                        }
+
+                        @media (max-width:768px) {
+                            max-width: 128px;
+
+                        }
+
+                        @media (max-width:$mobile) {
+                            max-width: 105px;
+                            object-fit: contain;
+                        }
+                    }
+                }
+            }
+
+            .second-item {
+                display: flex;
+                justify-content: center;
+                // align-items: center;
+                flex-direction: column;
+                padding-left: 100px;
+                position: relative;
+                max-height: 1143px;
+
+                padding-left: 8vw;
+
+                @media (max-width:$tablet) {
+                    padding-left: 4vw;
+                }
+
+                @media (max-width:$mobile) {
+                    order: 1;
+                    max-height: 100vh;
+                    margin-bottom: 140px;
+                }
+
+                .heading-wrapper {
+                    position: relative;
+
+                    .title {
+                        font-family: 'Neue Haas Grotesk Display Pro';
+                        font-style: normal;
+                        font-weight: 900;
+                        font-size: 96px;
+                        line-height: 115px;
+                        letter-spacing: -0.02em;
+                        text-transform: uppercase;
+                        color: #292D32;
+                        padding-bottom: 32px;
+
+                        // border-bottom: 1px solid rgba(41, 45, 50, 0.3);
+                        @media (max-width:$tablet) {
+                            font-weight: 900;
+                            font-size: 88px;
+                            line-height: 106px;
+                        }
+
+                        @media (max-width:768px) {
+                            font-weight: 700;
+                            font-size: 54px;
+                            line-height: 58px;
+                            padding-bottom: 8px;
+
+                        }
+
+                        span {
+                            font-family: 'JI Chimichanga';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 96px;
+                            line-height: 89px;
+                            letter-spacing: -0.02em;
+                            text-transform: uppercase;
+
+                            color: #292D32;
+                            margin-left: 24px;
+
+                            @media (max-width:$tablet) {
+                                font-weight: 400;
+                                font-size: 88px;
+                                line-height: 106px;
+                            }
+
+                            @media (max-width:768px) {
+                                font-weight: 400;
+                                font-size: 54px;
+                                line-height: 58px;
+                                margin-left: 0px;
+
+                            }
+                        }
+                    }
+
+                    .vertical-bar {
+                        position: absolute;
+                        height: 500px;
+                        background-color: rgba(41, 45, 50, 0.3);
+                        width: 1px;
+                        left: -28px;
+                        top: -40px;
+
+                        @media (max-width:$tablet) {
+                            display: none;
+                        }
+                    }
+
+
+                }
+
+                .horizontal-bar {
+                    position: absolute;
+                    height: 1px;
+                    background-color: rgba(41, 45, 50, 0.3);
+                    width: 542px;
+                    left: -55px;
+                    top: 122px;
+
+
+                    @media (max-width:$tablet) {
+                        display: none;
+                    }
+                }
+
+
+
+                .para-wrapper {
+                    display: flex;
+                    height: max-content;
+                    align-items: center;
+
+                    .content {
+                        font-family: 'Neue Haas Grotesk Display Pro';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 24px;
+                        line-height: 150%;
+                        /* or 36px */
+
+
+                        color: #292D32;
+                        max-width: 616px;
+
+                        @media (max-width:$tablet) {
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 150%;
+                            margin-top: 0px;
+                        }
+
+                        @media (max-width:$mobile) {
+                            font-weight: 600;
+                            font-size: 16px;
+                            line-height: 150%;
+                            margin-top: 9px;
+                        }
+
+                        @media (max-width:768px) {
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 150%;
+                        }
+
+                        @media (max-width:$mobile) {
+                            max-width: 335px;
+                        }
+                    }
+
+
+                    .vertical-line {
+                        width: 4px;
+                        border-radius: 10px;
+                        height: 70%;
+                        max-height: 200px;
+                        min-height: 100px;
+                        background-color: #292D32;
+                        box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+                        margin-right: 28px;
+                        margin-bottom: -13px;
+
+                        @media (max-width:768px) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .last-item {
+                background-image: url('../../public/image/nft/nft-bg-Mask.png');
+                background-repeat: no-repeat;
+                background-position: right;
+                max-height: 1143px;
+
+                @media (max-width:$mobile) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

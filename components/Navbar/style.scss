@@ -1,0 +1,35 @@
+.navbar-logo-container {
+    position: absolute;
+    top: 0px;
+    right: 0;
+    left: 0;
+
+    z-index: 100;
+
+    @media (max-width:$mobile) {
+        top: 0px;
+    }
+
+    .heading-logo {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 24px;
+        padding-bottom: 24px;
+
+        @media (max-width:$mobile) {
+            padding-bottom: 33px;
+            padding-top: 10px;
+
+            img {
+                width: 146px;
+                height: 49px;
+
+            }
+
+            margin: 0 auto;
+        }
+
+    }
+}

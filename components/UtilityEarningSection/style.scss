@@ -1,0 +1,302 @@
+.utility-earning-section {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    min-height: 100vh;
+    padding: 84px 0;
+    background: #000;
+    @media (max-width: 786px) {
+        padding: 56px 0px 106px 0;
+        row-gap: 0rem;
+    }
+    .heading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        column-gap: 2rem;
+
+        .seperator-left, 
+        .seperator-right {
+            position: absolute;
+            top: 25%;
+            height: 1px;
+            background: #FFF;
+            width: calc(50% - 367px);
+
+            @media (max-width: 1540px) {
+                width: calc(50% - 350px);
+            }
+            @media (max-width: 1240px) {
+                width: calc(50% - 320px);
+            }
+            @media (max-width: 978px) {
+                width: calc(50% - 200px);
+            }
+            @media (max-width: 918px) {
+                width: calc(50% - 250px);
+            }
+            @media (max-width: 768px) {
+                width: calc(50% - 200px);
+                top: 45%;
+            }
+            @media (max-width: 588px) {
+                width: calc(50% - 170px);
+            }
+            @media (max-width: 478px) {
+                width: calc(50% - 130px);
+            }
+            @media (max-width: 378px) {
+                width: calc(50% - 110px);
+            }
+        }
+        .seperator-left {
+            left: 0;
+        }
+        .seperator-right {
+            right: 0;
+        }
+
+        .main-text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex-direction: 50%;
+
+            h1 {
+                font-family: 'JI Chimichanga';
+                font-style: normal;
+                font-weight: 400;
+                font-size: clamp(42px,6.6vw,96px);
+                line-height: 89px;
+                letter-spacing: -0.02em;
+                text-transform: capitalize;
+                padding: 0 2rem;
+                color: #FFF;
+                @media (max-width: 388px) {
+                    font-size: 36px;
+                }
+            }
+
+
+            p {
+                font-style: normal;
+                font-weight: 500;
+                font-family: 'Neue Haas Grotesk Display Pro';
+                font-style: normal;
+                font-weight: 600;
+                font-size: clamp(16px,1.6vw,24px);
+                line-height: 150%;
+                text-align: center;
+                color: #FFFFFF;
+                margin-top: 32px;
+                padding: 0 2rem;
+
+                @media (max-width: 1440px) {
+                    margin-top: 16px;
+                }
+                @media (max-width: 786px) {
+                    margin-top: 0px;
+                }
+            }
+        }
+    }
+
+
+    .card-slider-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        margin: auto 0 !important;
+        padding-left: 3.7vw;
+        padding-right: 3.7vw;
+
+        @media (max-width: 1440px) {
+            padding-left: 2.5vw;
+            padding-right: 2.5vw;
+        }
+        @media (max-width: 786px) {
+            flex-direction: column-reverse;
+            padding-bottom: 200px;
+        }
+
+
+
+        .left-points {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            row-gap: 4rem;
+            flex-basis: 30%;
+
+            @media (max-width: 786px) {
+                position: absolute;
+                bottom: 150px;
+                row-gap: 0;
+                width: 100%;
+            }
+
+
+            .card {
+                display: flex;
+                align-items: center;
+                padding: 16px 24px;
+                background: #161616;
+                
+
+                @media (max-width:$tablet) {
+                    padding: 16px;
+                }
+                @media (max-width: 786px) {
+                    opacity: 0;
+                    transition: opacity 0.3s;
+                    position: absolute;
+                    padding: 24px;
+                    margin: 0 32px;
+                }
+                .elipse-container {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: fit-content;
+                    min-height: 24px;
+                    min-width: 24px;
+                    border-radius: 50%;
+                    border: 1px solid hsla(0,0%,100%,.2);
+
+            
+                    div {
+                        background: hsla(0,0%,100%,.2);
+                        width: 12px;
+                        height: 12px;
+                        border-radius: 50%;
+                    }
+
+                    @media (max-width: 446px) {
+                        display: none;
+                    }
+                }
+                p {
+                    margin-left: 1.5rem;
+                    font-family: 'Neue Haas Grotesk Display Pro';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 24px;
+                    line-height: 150%;
+                    color: #FFFFFF;
+
+                    @media (max-width: 1840px) {
+                        font-family: 'Neue Haas Grotesk Display Pro';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 150%;
+                    }
+
+                    @media (max-width:$tablet) {
+                        font-family: 'Neue Haas Grotesk Display Pro';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 150%;
+                    }
+
+                }
+            }
+            .card.active {
+                opacity: 1;
+            }
+
+            .arrow {
+                display: none;
+
+                @media (max-width: 786px) {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    bottom: -70px;
+                    // transform: translateY(65px);
+                    height: 30px;
+                    width: 30px;
+                    background: #191919;
+                    filter: drop-shadow(0px 0px 30px rgba(99, 99, 99, 0.213));
+                    border-radius: 0;
+                    border: 1px solid #ffffff60;
+                    z-index: 111;         
+                    cursor: pointer;
+                }
+                img {
+                    width: 14px;
+                    height: 10px;
+                }
+            }
+            .arrow:hover {
+                border-color: #ffffffda;
+            }
+            .arrow.left-arrow {
+                left: 1rem;
+
+                img {
+                    transform: rotate(-180deg);
+                }
+            }
+            .arrow.right-arrow {
+                right: 1rem;
+            }
+        }
+        .nav-slider {
+            display: none;
+
+            @media (max-width: 786px) {
+                display: flex;
+                justify-content: center;
+                column-gap: .7rem;
+                height: 3px;
+                width: calc(90% - 2rem);
+                position: absolute;
+                bottom: -30px;
+                transform: translateY(00px);
+
+                .slider {
+                    width: 28px;
+                    height: 3px;
+                    background-color: #f3bd7254;
+                }
+                .slider.active-slider {
+                    background-color: #f3bd72;
+                    width: 50px;
+                    transition: all 0.4s ease;
+
+                }
+            }
+        }
+
+        .centered-img {
+            position: relative;
+            width: 28%;
+            overflow: hidden;
+            display: flex;
+            @media (max-width: 786px) {
+                width: 100%;
+                margin-top: 0rem;
+                padding: 0 2rem;
+                min-height: 300px;
+            }
+
+            img {
+                width: 100%;
+                transition: opacity 0.5s ease-in-out;
+                // opacity: 0;
+            }
+            img.activeImg {
+                opacity: 1;
+                // transform: translateX(-100%);
+            }
+        }
+
+
+
+    }
+}

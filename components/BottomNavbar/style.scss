@@ -1,0 +1,193 @@
+.bottom-navbar-container {
+    width: 100%;
+    // position: static;
+    // bottom: 0px;
+
+    position: fixed;
+    bottom: 24px;
+    right: 0;
+    left: 0;
+
+    z-index: 100;
+
+    .menu-list-wrapper {
+        background: rgba(17, 17, 17, 0.6);
+        backdrop-filter: blur(8px);
+        border-radius: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 68px;
+        max-width: 825px;
+        margin: 0 auto;
+        padding-left: 56px;
+        padding-right: 56px;
+
+        @media (max-width: $mobile) {
+            display: none;
+        }
+
+        @media (max-width:768px) {
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .menu-items {
+            font-family: 'Neue Machina';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 18px;
+            line-height: 17px;
+            color: #828282;
+            position: relative;
+            cursor: pointer;
+
+
+            .border-right-line {
+                height: 55px;
+                border: 1px solid #1c1b1b;
+                position: absolute;
+                z-index: 1;
+                top: -19px;
+                right: -37px;
+
+                @media (max-width:768px) {
+                    right: -19px;
+                    height: 52px;
+
+                }
+            }
+
+            .border-line-active {
+                border: 1px solid #fff;
+
+            }
+        }
+
+        .active {
+            color: #FFFFFF;
+
+        }
+
+
+    }
+
+    .mobile-menu-list-container {
+        .menu-icon-wrapper {
+
+            width: 153px;
+            height: 56px;
+            margin: 0 auto;
+            background: rgba(17, 17, 17, 0.6);
+            backdrop-filter: blur(8px);
+
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            flex-direction: row;
+            justify-content: center;
+            display: none;
+
+            @media (max-width: $mobile) {
+                display: flex;
+                width: 141px;
+                height: 46px;
+            }
+
+            .menu-icon {
+                display: inline-block;
+                // margin-left: -20px;
+
+                img {
+
+                    margin-left: 12px;
+                    margin-bottom: -4px;
+
+                }
+
+            }
+
+            .label {
+                display: inline-block;
+                padding-top: -10px;
+                font-size: 14px;
+            }
+        }
+
+        .mobile-menu-list-wrapper {
+            background: #111111;
+            border-radius: 16px;
+            width: 207px;
+            height: 348px;
+            display: flex;
+            flex-direction: column-reverse;
+            margin: 0 auto;
+            position: fixed;
+
+            // right: -100%;
+            bottom: -100%;
+            transition: 850ms;
+            left: 0;
+            right: 0;
+            // display: none;
+
+            // @media (max-width: $mobile) {
+            //     display: flex;
+            // }
+
+            .menu-items {
+                font-family: 'Neue Machina';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 14px;
+                line-height: 15px;
+
+                color: #FFFFFF;
+                width: 101px;
+                margin: 0 auto;
+                height: 15px;
+                margin-bottom: 37px;
+                text-align: center;
+
+                &:nth-child(2) {
+                    margin-bottom: 36px;
+                }
+
+                &:nth-child(1) {
+                    margin-bottom: 36px;
+                }
+            }
+
+            .menu-icon-wrapper {
+                padding-bottom: 10px;
+                display: inline-block;
+                text-align: center;
+
+
+                .label {
+                    font-family: 'Neue Machina';
+                    font-style: normal;
+                    font-weight: 800;
+                    font-size: 16px;
+                    line-height: 15px;
+
+                    color: #FFFFFF;
+                    padding-right: -10px;
+
+                }
+            }
+        }
+
+        .active {
+            right: 0;
+            transition: 350ms;
+            bottom: 20px;
+            left: 0;
+
+        }
+
+    }
+
+}

@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "Neue Machina";
+  src: local("Neue Machina"),
+    url("/fonts/NeueMachin_Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "JI Chimichanga";
+  src: local("JI Chimichanga"),
+    url("/fonts/ji_chimichanga/JI_Chimichanga.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Neue Haas Grotesk Display Pro";
+  src: local("Neue Haas Grotesk Display Pro"),
+    url("/fonts/neue_haas-grotesk_display_pro/NeueHaasDisplayLight.woff")
+      format("woff");
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Neue Haas Grotesk Display Pro";
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
